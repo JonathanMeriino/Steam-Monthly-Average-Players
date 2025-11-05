@@ -1,0 +1,19 @@
+
+read_csv () Lee un archivo en formato CSV 
+
+%>% conocido como "pipe"(tuberia) 
+	Sintaxis X%>%f(y) equivale a f(x,y)
+	Su propósito es encadenar operaciones de forma legible, pasando el resultado de una expresión como primer argumento de la siguiente
+
+group_by() Agrupa el data frame por el nombre del juego
+
+mutate(Max_Jugadores = max(avg_players, na.rm = TRUE))
+	Crea una columna temporal Max_Jugadores que, para cada grupo (juego), guarda el valor máximo de avg_players dentro de ese juego.
+	na.rm = TRUE evita que los valores faltantes afecten el cálculo max.
+	La función mutate() en R, del paquete dplyr, crea nuevas variables (columnas) a partir de variables existentes en un data frame, o modifica columnas existentes
+	
+ungroup() Deshace el agrupamiento para que las operaciones posteriores apliquen al dataset completo y no por grupos
+
+n_distinct () La función n_distinct() en R, parte del paquete dplyr, cuenta el número de valores únicos en una columna o en una combinación de columnas de un conjunto de datos.
+
+cat() La función cat() en R concatena y muestra texto o múltiples objetos por pantalla, combinándolos en una única salida formateada
